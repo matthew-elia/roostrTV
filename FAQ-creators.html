@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Roostr | Performance Influencer Marketing - Drive direct mobile game installs with youtube and twitch">
+    <meta name="author" content="">
+
+    <title>Roostr</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- theme CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+   	
+   	<!-- Custom CSS -->
+   	<link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+    
+	body {
+        /*background-color:rgba(232, 69, 85, 0.7);
+        background-size:cover;*/
+        font-family: 'Open Sans';  
+    }
+
+    #navbar {
+        min-height: 75px;
+    }
+
+     .navbar-right {
+        padding: 15px 5px;
+    }
+
+    .header-image {
+        background-image: url('images/creators.jpg');
+        background-size:cover;
+        width:100%;
+        height:100%;
+        text-align: center;
+    }
+
+    .header-img-overlay {
+        width:100%; 
+        height:100%; 
+        background-color:rgba(226, 69, 102, 0.7);
+;
+    }
+
+    .btn-jumbotron {
+        background: none;
+        border: 2px solid white;
+        border-radius: 24px;
+        font-size: 20px;
+        margin:15px 15px;
+        padding: 10px 40px;
+        color:white;
+    }
+
+    .btn-jumbotron:hover {
+        background-color: #34495E;
+        color:white;
+    }
+
+    .modal-content {
+        background: url('/images/sign_up_box.png');
+        background-size: cover;
+        text-align: center;
+    }
+
+        #form-wrapper {
+            background: url('/images/sign_up_white_box.png');
+            background-size: cover;
+        }
+
+        .form-group {
+            margin:0;
+        }
+
+        .form-control {
+            border: none;
+            height: 50px;
+        }
+
+        .form-submit-btn {
+            background-color: white;
+            margin: 5px 15px;
+        }
+
+            input {
+                border-radius:0;
+            }
+
+        #about, #contact {
+            background-color: #FAFAFA;
+            text-align: center;
+            padding:15px 30px;
+        }
+
+        #services {
+            text-align: center;
+            padding:15px 30px;  
+        }
+
+            .featurette-img {
+                padding:15px 5px;
+                max-height:250px;
+            }
+                
+            .lead {
+                padding:30px 30px;
+            }
+
+    footer {
+        text-align: center;
+        margin:0;
+        margin-top:-20px;
+    }
+
+    p {
+        font-size:19px;
+    }
+
+</style>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="images/roostr_logo_nav.png" alt="" class="img-responsive" style="max-width:180px;" />
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/games.html">GAMES</a></li>
+            <li><a href="/creators.html">CREATORS</a></li>
+            <li><a href="/about.html">ABOUT</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FAQ</span></a>
+              <ul class="dropdown-menu" id="faq-dropdown"><br>
+                <li><a href="/FAQ-games.html">Games</a></li>
+                <li><a href="/FAQ-creators.html">Creators</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">JOIN</span></a>
+              <ul class="dropdown-menu"><br>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Video Creator</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal2">Game Maker</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <img src="/images/roostr_logo_white.png" alt="" />
+            </div>
+
+            <div class="modal-body">
+                <div id="form-wrapper">
+                  <form class="form form-inline form-horizontal" role="form" data-toggle="validator" method="post" action="form-to-db_C.php">
+                    <div class="form-group col-xs-12" style="padding-top:15px;">
+                       <img src="/images/icon_name.png" alt="" id="formlabels" class="col-xs-2" />  
+                       <input type="text" class="form-control col-xs-10" name="full_name_C" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group col-xs-12">
+                      <img src="/images/icon_video.png" alt="" id="formlabels" class="col-xs-2" />  
+                      <input type="url" class="form-control col-xs-10" name="channel_URL_C" placeholder="Channel URL" required>
+                    </div>
+                    <div class="form-group col-xs-12">
+                      <img src="/images/icon_email.png" alt="" id="formlabels" class="col-xs-2" />  
+                      <input type="email" class="form-control col-xs-10" name="email_C" placeholder="Email" required>
+                    </div>
+                    <div class="form-submit-btn">
+                        <input type="submit" name="submit" value="CONTACT US TO LEARN MORE" class="btn btn-modal" />
+                    </div>
+                  </form>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+            </div>
+
+          </div> <!-- end Modal content -->
+          
+        </div>
+      </div> <!-- End Modal -->
+      
+    </div>
+
+    <div class="container">
+
+     <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <img src="/images/roostr_logo_white.png" alt="" />
+            </div>
+
+            <div class="modal-body">
+                <div id="form-wrapper">
+                  <form class="form form-inline form-horizontal" role="form" data-toggle="validator" method="post" action="form-to-db_G.php">
+                    <div class="form-group col-xs-12" style="padding-top:15px;">
+                       <img src="/images/icon_name.png" alt="" id="formlabels" class="col-xs-2" />  
+                       <input type="text" class="form-control col-xs-10" name="full_name_G" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group col-xs-12">
+                      <img src="/images/icon_company.png" alt="" id="formlabels" class="col-xs-2" />  
+                      <input type="text" class="form-control col-xs-10" name="company_G" placeholder="Company" required>
+                    </div>
+                    <div class="form-group col-xs-12">
+                      <img src="/images/icon_email.png" alt="" id="formlabels" class="col-xs-2" />  
+                      <input type="email" class="form-control col-xs-10" name="email_G" placeholder="Email" required>
+                    </div>
+                    <div class="form-submit-btn">
+                        <input type="submit" name="submit" value="CONTACT US TO LEARN MORE" class="btn btn-modal" />
+                    </div>
+                  </form>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+            </div>
+
+          </div> <!-- end Modal content -->
+          
+        </div>
+      </div> <!-- End Modal -->
+      
+    </div>
+
+<div style="padding:0; margin:0; background-color:#E84555; width:100%; text-align:center;">
+    <h2 style="margin:0; margin-top:30px; padding-top:30px; padding-bottom:30px; color:white;">Frequently Asked Questions</h2>
+</div>
+
+<!-- Page content -->
+
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+        <img src="/images/FAQ_page_2.jpg" class="img-responsive" style="max-height:275px">
+    </div>
+</div>
+
+        <!-- Page Content -->
+<div id="faq-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3><b>Are you an MCN?</b></h3>
+
+                <p>No, Roostr is an open marketplace for connecting with game publishers. While we play friendly with MCNs and welcome all creators who are affiliated with MCNs to work with Roostr, we do not operate as one. We require no exclusivity to access.</p>
+
+                <p>Our focus is on connecting creators to the top mobile games while giving them complete creative control and further opportunities to grow their channels and revenue.</p>
+
+                <h3><b>How do I make money with Roostr?</b></h3>
+
+                <p>At the start of each campaign, we give you a link to share with your audiences that lets them directly download the games you promote. You can incorporate this link in any way you’d like within your content and across your social media channels. You get paid a pre-determined set amount for every install you drive from this link shared across any of your social channels.</p>
+
+                <h3><b>Why would I want to get paid on a Cost Per Install (CPI) basis when I normally get paid a flat amount to make videos?</b></h3>
+
+                <p>Great question - let us give you an honest answer. Mobile game user acquisition budgets have never been larger or more important than right now - there is 17 billion dollars up for grabs. Mobile success is driven by one major need - installs. In order to offer the largest possible campaign budgets to creators, game publishers need the ability to track the performance of those campaigns in order to spend more money.</p>
+
+                <p>There’s good news! Performance across engaged channels is very high and you are likely to make more per video than ever before.</p>
+
+                <h3><b>Which games will I get to produce content for?</b></h3>
+
+                <p>We are adding top mobile games to the platform every day. For a current list of games available, please contact us at <a href="mailto:info@roostr.tv">info@roostr.tv</a>.</p>
+
+                <h3><b>Am I limited to one campaign at a time?</b></h3>
+
+                <p>No! We want you to create as much content as you’d like, free of any restrictions. Sign up for multiple offers for games that fit your target audience and game preferences.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div style="padding:0; margin:0; background-color:#E84555; width:100%; text-align:center;">
+        	<h1 style="padding-top:40px; color:white;">Cool, how do I find out more?</h1>
+            <h3 style="margin:15px; color:white;">
+                Join Roostr and become one of the top marketers<br>
+                for mobile games.
+            </h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a class="btn btn-jumbotron" href="#" data-toggle="modal" data-target="#myModal2">
+                            JOIN THE ROOST
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img class="corner-roostr" src="images/white_corner_roostr.png" />
+                    </div>
+                    <div class="col-sm-8">
+                        <p style="font-size: 16px; margin:0; padding:20px 5px; color:white;">Copyright &copy; 2015 Roostr Inc. - All Rights Reserved</p>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+		var url = window.location;
+		// Will only work if string in href matches with location
+		$('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+		// Will also work for relative and absolute hrefs
+		$('ul.nav a').filter(function() {
+		    return this.href == url;
+		}).parent().addClass('active');
+
+	</script>
+
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64033540-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script>
+
+        $('form').validator().on('submit', function (e) {
+          if (e.isDefaultPrevented()) {
+            // handle the invalid form...
+          } else {
+            //continue
+          }
+        });
+
+    </script>
+
+</body>
+
+</html>

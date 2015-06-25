@@ -1,0 +1,259 @@
+@font-face {
+	font-family: 'Aller';
+	src: url ('../fonts/Aller/Aller_Rg.ttf');
+}
+
+@font-face	{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face	{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Chunk Five';
+	src: url('../fonts/ChunkFive/ChunkFive.ttf');
+}
+
+.nav>li { 
+	padding: 0px 14px;
+}
+
+.navbar-brand {
+	min-height: 80px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-size:24px;
+	color:#33495C;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background-color: #33495C;
+	color:white;
+} 
+
+
+.navbar-default .navbar-nav> li >a:hover {
+	background-color:#E84555;
+	color:white;
+}
+
+.navbar-default .navbar-nav>.active>a {
+
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color:#E84555;
+	color:white;
+}
+
+.navbar-right .dropdown-menu {
+	background: url('/images/hover_dropdown.png');
+	background-size: cover;
+	border:none;
+	box-shadow: none;
+	padding: 8px 16px;
+}
+
+.dropdown-menu>li>a {
+	color:white;
+	font-size: 18px; 
+}
+.dropdown-menu>li>a:hover {
+	color:#E84555;
+	width:100%;
+}
+
+.dropdown-menu>li.active>a:hover {
+	color:white;
+}
+
+.jumbotron {
+	margin-top: 50px; 
+}
+
+.jumbotron h1 {
+	margin-top:150px;
+	font-size:36px;
+}
+
+.modal-header {border-bottom: none;}
+	
+	.modal-header>img {
+		max-width: 200px;
+		margin-top: 30px;
+	}
+
+.modal-footer {border-top: none;}
+.modal-body {margin-top: 0;}
+
+#wrapper {
+	text-align:left;
+	height: 100%;
+	margin:0px;
+}
+
+#faq-wrapper {
+	margin:25px;
+	margin-bottom: 50px;
+}
+
+#formlabels {
+	padding:5px 25px;	
+}
+
+
+.form-inline .form-control {
+	width:83%;
+	border-radius: none;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   color:white;
+}
+
+.close {
+	color: white;
+	opacity: 1;
+	font-size: 36px;
+}
+
+p.lead {
+	padding: 30px 60px;
+	margin:0;
+	margin-top:26px;
+}
+
+.featurette-img {
+	max-width: 100%;
+}
+
+.btn-modal {
+    background: #34495E;
+    border: 2px solid #34495E;
+    color:white;
+    border-radius: 24px;
+    font-size: 20px;
+    margin:15px 15px;
+    padding: 10px 100px;
+    max-width: 100%;
+    white-space: normal;
+}
+.btn-modal:hover{color:white;}
+.btn-modal:active {
+	background-color:white;
+	color:#33495C;
+}
+
+.modal-content {
+	border:none;
+	box-shadow: none;
+}
+
+input.form-control, input.form-control:focus {
+    border:none;
+    box-shadow: none;
+    border-radius:0;
+}
+
+.modal-body {
+	padding:20px;
+}
+
+@media screen 
+and (min-width: 480px)
+and (max-width: 992px) {
+	.jumbotron {
+		margin-top:10px;
+	}
+
+	.jumbotron h1 {
+		line-height: 1.4;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+	.navbar-right .dropdown-menu {
+		background: none;
+	}
+
+	p.lead {
+		padding: 30px 15px;
+		margin-top:0px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	p {
+		line-height: 1;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.jumbotron {
+		padding: 30px 0px;
+	}
+
+	.jumbotron h1 {
+		font-size:24px;
+		line-height: 1.4;
+	}
+
+	p.lead {
+		padding: 30px 15px;
+		margin:0;
+	}
+
+	.navbar-brand>img {
+	    max-width: 150px;
+	}
+
+	.btn-modal {
+		padding: 10px 50px;
+	}
+
+	#formlabels {
+		padding: 8px;
+	}
+
+	.modal-body {
+	  padding: 12px;
+	  padding-top: 0px;
+	}
+
+	input.btn.btn-modal {
+		  padding: 8px 12px;
+		  font-size:18px;
+	}
+
+	footer>div>h2 {
+		font-size:22px;
+	}
+}
+
+/*@media screen and (max-width: 767px) {
+	.navbar-nav .open .dropdown-menu {
+		height: 
+	}
+}*/
+
+.corner-roostr {
+	max-height: 150px;
+	width: auto;
+	display: inline;	
+}
+
+#faq-dropdown {
+	right: 20px;
+	padding: 4px 16px;
+}
