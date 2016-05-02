@@ -1,6 +1,6 @@
 <?php
 
-require('connect.php');
+require('config/connect.php');
 
 $fullname = $_POST['full_name_G'];
 $company = $_POST['company_G'];
